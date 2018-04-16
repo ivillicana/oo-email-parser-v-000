@@ -12,6 +12,7 @@ class EmailParser
 
   def parse
     @emails << @list.gsub(",", " ").split(/\s+/)
-  end.flatten.uniq
-
+    @emails.flatten.uniq
+  end
+  
 end
